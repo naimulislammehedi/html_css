@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selecctor</title>
+
+    <style>
+        /* Universal selector */
+        * {
+            color: blue;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Element Selector */
+        p {
+            color: red;
+        }
+
+        /* Class selector */
+        .green {
+            color: green;
+        }
+
+        /* ID selector */
+        #gray {
+            color: gray; 
+        }
+
+        /* Group Selector */
+        p, h1, h2 {
+            font-family: Arial; 
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: green;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: brown;
+        }
+
+        /* Pseudo-class selector */
+        div > button:hover {
+            color: #008000;
+        }
+    </style>
+</head>
+<body>
+    <p>I'm Paragraph</p>
+    <p class="green" id="gray">I'm Paragraph</p>
+    <p>I'm Paragraph</p>
+    <p>I'm Paragraph</p>
+    <p class="green">I'm Paragraph</p>
+    <h1>I'm heading</h1>
+    <h2>I'm Heading 2</h2>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, nobis.</p>
+        <button>Click Me</button>
+    </div>
+</body>
+</html>
